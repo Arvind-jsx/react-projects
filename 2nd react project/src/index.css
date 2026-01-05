@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 10px;
+}
+
+nav h2 {
+  font-size: 13px;
+  background: black;
+  color: white;
+  padding: 7px;
+  border-radius: 50px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-align: center;
+}
+
+nav h3 {
+  font-size: 13px;
+  background: #80808038;
+  padding: 6px 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.Page-one-center {
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.one-center-left {
+  width: 40%;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.one-center-left h1 {
+  width: 200px;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.one-center-left h1 strong {
+  background: #80808075;
+  padding: 0px 7px;
+  border-radius: 10px;
+}
+
+.one-center-left p {
+  color: gray;
+  font-size: 14px;
+  width: 200px;
+}
+
+.one-center-right {
+  width: 85%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+
+.one-center-right .card {
+  overflow: hidden;
+  position: relative;
+  width: 245px;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.one-center-right img {
+  width: 280px;
+  filter: blur(1px);
+}
+
+.one-center-right .one-card-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.one-card-text h1 {
+  background: white;
+  padding: 10px 11px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.one-card-text .one-card-bottam {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.one-card-bottam p {
+  color: #2e2222;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.one-card-bottam button {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 800;
+  color: white;
+  background: #5252f3;
+  letter-spacing: 2px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.page-two {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.page-two h1 {
+  font-size: 2.5rem;
+}
+
+.page-two p {
+  color: gray;
+  font-size: 13px;
+}
+
+.page-two button {
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+
+  box-shadow: 0 6px 0 #22222238;
+}
+
+.page-two button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background: #111;
+}
+
+.page-two button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #222;
+}
+@media (max-width: 841px) {
+  .Page-one-center {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
