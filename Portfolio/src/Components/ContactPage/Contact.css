@@ -1,0 +1,60 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .ct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 0px 15px;
+  font-size: 13px;
+  line-height: 1.8;
+  animation: fadeUp 1.1s ease forwards;
+}
+
+.ct .contact-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.contact-links a {
+  padding: 3px 21px;
+  color: #ffffff;
+  background: rgb(255 255 255 / 4%);
+  backdrop-filter: blur(21px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: rotateX(46deg) skewX(12deg);
+  box-shadow: -1px 5px 0px 0px white;
+  transition: 0.4s ease all;
+  cursor: pointer;
+}
+
+.contact-links a:hover {
+  transform: rotateX(0deg) skewX(0deg);
+}
